@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тренер — Эндшпиль</title>
+  <link rel="stylesheet" href="./styles/coach.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Эндшпиль</h1>
+      <div class="burger" id="burger">&#9776;</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="coach.html" class="active">Тренер</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="students.html">Об учениках</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="coach-section">
+      <h2>Главный тренер школы</h2>
+      <div class="coach-card">
+        <img src="https://cdn.pixabay.com/photo/2017/08/06/19/08/woman-2593366_1280.jpg" alt="Турдиева Халима Рустамовна" />
+        <div class="coach-info">
+  <h3>Турдиева Халима Рустамовна</h3>
+  <p>Профессиональный тренер по шахматам с более чем 15-летним опытом. Под её руководством ученики неоднократно побеждали в городских, областных и республиканских турнирах. Она умеет находить подход к каждому ученику, независимо от уровня подготовки и возраста.</p>
+  
+  <p>Халима Рустамовна окончила педагогический университет с красным дипломом, затем прошла специализацию по шахматной педагогике. В своей работе она использует авторские методики, которые развивают логическое мышление, стратегическое планирование и самостоятельность.</p>
+  
+  <p>Также активно организует турниры внутри школы, поддерживает дух соревновательности и дружбы среди учеников. Многие её воспитанники достигли первого взрослого разряда, а некоторые продолжают профессиональную шахматную карьеру.</p>
+  
+  <p><strong>Девиз:</strong> «Шахматы учат мыслить — а значит, побеждать»</p>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Шахматная школа «Эндшпиль». Все права защищены.</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

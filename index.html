@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Шахматная школа Эндшпиль</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Эндшпиль</h1>
+      <div class="burger" id="burger">&#9776;</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="coach.html">Тренер</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="students.html">Об учениках</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Добро пожаловать в шахматную школу «Эндшпиль»</h2>
+      <p>Мы обучаем шахматам детей и взрослых, развиваем стратегическое мышление и готовим к соревнованиям.</p>
+    </section>
+
+    <section class="faq">
+      <h2>Часто задаваемые вопросы</h2>
+
+      <div class="faq-item">
+        <h3 class="faq-question">С какого возраста можно начать?</h3>
+        <p class="faq-answer">Мы принимаем учеников с 5 лет.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Нужно ли иметь опыт?</h3>
+        <p class="faq-answer">Нет, мы обучаем с нуля до уровня КМС.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Есть ли пробное занятие?</h3>
+        <p class="faq-answer">Да, первое занятие — бесплатно и без обязательств.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Как записаться?</h3>
+        <p class="faq-answer">Вы можете оставить заявку на странице «Контакты» или позвонить нам.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Шахматная школа «Эндшпиль». Все права защищены.</p>
+  </footer>
+
+  <script>
+    // Бургер-меню
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+
+  <script>
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      q.classList.toggle('active');
+      const answer = q.nextElementSibling;
+      answer.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

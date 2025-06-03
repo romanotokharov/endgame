@@ -1,0 +1,140 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Шапка */
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #c19a6b;
+}
+
+/* Бургер */
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+  nav.show {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    background: #111;
+    padding: 10px;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.schedule-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+}
+
+.schedule-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.schedule-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #333;
+}
+
+.schedule-table th {
+  background-color: #f0a500;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.schedule-table tbody tr:hover {
+  background-color: #fff7d1;
+  cursor: default;
+}
+
+/* Футер */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .schedule-table th, .schedule-table td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}

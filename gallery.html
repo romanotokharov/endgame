@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея — Эндшпиль</title>
+  <link rel="stylesheet" href="./styles/gallery.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Эндшпиль</h1>
+      <div class="burger" id="burger">&#9776;</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="coach.html">Тренер</a></li>
+          <li><a href="gallery.html" class="active">Галерея</a></li>
+          <li><a href="students.html">Об учениках</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery-section">
+      <h2>Наши ученики</h2>
+      <div class="gallery-grid">
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+1" alt="Ученик 1"><p>Фарадж</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+2" alt="Ученик 2"><p>Раиль</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+3" alt="Ученик 3"><p>Роман</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+4" alt="Ученик 4"><p>Рамазан</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+5" alt="Ученик 5"><p>Ален</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+6" alt="Ученик 6"><p>Муслим</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+7" alt="Ученик 7"><p>Александр</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+8" alt="Ученик 8"><p>Александр</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+9" alt="Ученик 9"><p>Амир</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+10" alt="Ученик 10"><p>Алия</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+11" alt="Ученик 11"><p>Айлин</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+12" alt="Ученик 12"><p>Вова</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+13" alt="Ученик 13"><p>Айсултан</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+14" alt="Ученик 14"><p>Ахмет</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+15" alt="Ученик 15"><p>Саян</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+16" alt="Ученик 16"><p>Акежан</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+17" alt="Ученик 17"><p>Ислам</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+18" alt="Ученик 18"><p>Вильдан</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+19" alt="Ученик 19"><p>Асель</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+20" alt="Ученик 20"><p>Жасулан</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+21" alt="Ученик 21"><p>Меруерт</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+22" alt="Ученик 22"><p>Алишер</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+23" alt="Ученик 23"><p>Сабина</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+24" alt="Ученик 24"><p>Азамат</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+25" alt="Ученик 25"><p>Карина</p></div>
+  <div class="student-card"><img src="https://via.placeholder.com/200x200?text=Ученик+26" alt="Ученик 26"><p>Ильяс</p></div>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Шахматная школа «Эндшпиль». Все права защищены.</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

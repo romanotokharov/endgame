@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Расписание — Шахматная школа Эндшпиль</title>
+  <link rel="stylesheet" href="./styles/shedule.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container container">
+      <h1> Эндшпиль</h1>
+      <div class="burger" id="burger">&#9776;</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="coach.html">Тренер</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="students.html">Об учениках</a></li>
+          <li><a href="schedule.html" class="active">Расписание</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container schedule-section">
+    <h2>Расписание занятий</h2>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>День недели</th>
+          <th>Время</th>
+          <th>Группа</th>
+          <th>Возраст</th>
+          <th>Тренер</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Понедельник</td>
+          <td>10:30 - 11:30</td>
+          <td>Начинающие</td>
+          <td>7-10 лет</td>
+          <td>Халима Рустамовна</td>
+        </tr>
+        <tr>
+          <td>Понедельник</td>
+          <td>11:30 - 13:00</td>
+          <td>Продвинутые</td>
+          <td>11-15 лет</td>
+          <td>Халима Рустамовна</td>
+        </tr>
+        <tr>
+          <td>Среда</td>
+          <td>10:30 - 11:30</td>
+          <td>Начинающие</td>
+          <td>7-10 лет</td>
+          <td>Халима Рустамовна</td>
+        </tr>
+        <tr>
+          <td>Среда</td>
+          <td>11:30 - 13:00</td>
+          <td>Продвинутые</td>
+          <td>11-15 лет</td>
+          <td>Халима Рустамовна</td>
+        </tr>
+        <tr>
+          <td>Пятница</td>
+          <td>14:30 - 16:00</td>
+          <td>Игровой</td>
+          <td>все возраста</td>
+          <td>Халима Рустамовна</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2025 Шахматная школа «Эндшпиль». Все права защищены.</p>
+  </footer>
+
+  <script>
+    // Бургер-меню
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Шапка */
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #c19a6b;
+}
+
+/* Бургер */
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+  }
+  nav.show {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    background: #111;
+    padding: 10px;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.contacts-section {
+  padding: 60px 20px;
+  min-height: 70vh;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contacts-section h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.contact-info-simple p {
+  font-size: 20px;
+  color: #333;
+  margin: 15px 0;
+}
+
+.contact-info-simple a {
+  color: #f0a500;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info-simple a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 30px;
+  max-width: 900px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Бургер-меню стили, если их ещё нет */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #222;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.header-container h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #f0a500;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Футер */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #222;
+  }
+  nav.show {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  .burger {
+    display: block;
+  }
+}
